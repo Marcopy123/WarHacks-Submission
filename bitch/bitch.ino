@@ -43,11 +43,11 @@ void setup() {
 // the loop function runs over and over again forever
 void loop() {
   int speed = 255;
-  analogWrite(a_1a, speed);
-  analogWrite(a_1b, LOW);
+  analogWrite(a_1a, speed); // ends with a : moves forward
+  analogWrite(a_1b, LOW); // turn off the move backward
 
-  analogWrite(b_1a, speed);
-  analogWrite(b_1b, LOW);
+  analogWrite(b_1a, speed); // other wheel moves forward
+  analogWrite(b_1b, LOW); // turn off the moves backward
 }
 
 void forward(int secs){
